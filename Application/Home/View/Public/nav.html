@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse" role="navigation">
+<div class="navbar-header">
+  <a class="navbar-brand" href="#">ASK项目</a>
+</div>
+<div>
+  <ul class="nav navbar-nav">
+    <li <if condition="$ctr eq ''">class="active"</if>><a href="{:U('index/index')}">首页</a></li>
+    <li <if condition="$ctr eq 'Class'">class="active"</if>><a href="{:U('class/index')}">按分类</a></li>
+    <li <if condition="$ctr eq 'Tag'">class="active"</if>><a href="{:U('tag/index')}">按标签</a></li>
+    <li <if condition="$ctr eq 'History'">class="active"</if>><a href="{:U('history/index')}">历史记录</a></li>
+    <li <if condition="$ctr eq 'Figure'">class="active"</if>><a href="{:U('figure/index')}">设置</a></li>
+    <li><a href="{:U('logout/index')}">退出</a></li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Java <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">jmeter</a></li>
+      <li><a href="#">EJB</a></li>
+      <li><a href="#">Jasper Report</a></li>
+      <li class="divider"></li>
+      <li><a href="#">分离的链接</a></li>
+      <li class="divider"></li>
+      <li><a href="#">另一个分离的链接</a></li>
+    </ul>
+    </li>
+  </ul>
+</div>
+<div>
+  <ul class="nav pull-right">
+    <li>
+    <a href="#" >admin</a>
+    </li>
+  </ul>
+</div>
+</nav>
